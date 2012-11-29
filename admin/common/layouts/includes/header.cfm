@@ -48,6 +48,9 @@ version 2 without this exception.  You may, if you choose, apply this exception 
 <cfparam name="rc.originalfuseAction" default="">
 <cfparam name="rc.originalcircuit" default="">
 <cfparam name="rc.moduleid" default="">
+<cfparam name="hidelist" default="">
+<cfparam name="myfusebox.originalcircuit" default="">
+
 <cfif not isDefined("session.mura.memberships")>
   <cflocation url="#application.configBean.getContext()#/admin/?muraAction=cLogin.logout" addtoken="false">
 </cfif>
